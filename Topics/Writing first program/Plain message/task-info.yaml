@@ -1,0 +1,14 @@
+type: code
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8212#comment
+status: Solved
+feedback:
+  message: "<html>Your program correctly printed \"We love Python!\" \nYou've shown\
+    \ that you understand how to use the print() function and the importance of case\
+    \ sensitivity in strings.\n\n</html>"
+  time: "Thu, 25 Apr 2024 19:42:48 UTC"
+record: -1
+submission_language: python3

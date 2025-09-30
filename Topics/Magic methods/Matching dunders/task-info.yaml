@@ -1,0 +1,23 @@
+type: matching
+captions:
+  - __init__
+  - __new__
+  - __repr__
+  - __str__
+options:
+  - Create a new instance of the class
+  - Initialize a new instance of the class
+  - Define user-friendly representation of an instance
+  - Define an instance representation for debugging
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7141#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3

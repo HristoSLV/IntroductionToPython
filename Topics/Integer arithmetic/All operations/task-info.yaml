@@ -1,0 +1,32 @@
+type: matching
+captions:
+  - division
+  - integer division
+  - raising to power
+  - remainder of the division
+  - addition
+  - multiplication
+  - subtraction
+options:
+  - +
+  - '-'
+  - '**'
+  - '*'
+  - /
+  - '%'
+  - //
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6889#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6

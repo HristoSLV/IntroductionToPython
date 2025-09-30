@@ -1,0 +1,16 @@
+type: sorting
+options:
+  - c = b
+  - a = c
+  - b = a
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/5862#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2

@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: a &gt; c
+  - text: c &gt;= d
+  - text: a * b != c
+  - text: a is b
+  - text: d &gt; b
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/5922#comment
+status: Solved
+record: -1
+custom_name: Find "true"
+local_check: false

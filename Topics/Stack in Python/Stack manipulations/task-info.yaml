@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: 2
+  - text: 7
+  - text: 9
+  - text: 5
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8917#comment
+status: Solved
+record: -1
+local_check: false

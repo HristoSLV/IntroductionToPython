@@ -1,0 +1,21 @@
+type: matching
+custom_name: "Input: a new built-in function"
+captions:
+  - input
+  - print
+  - string
+options:
+  - Outputs something in the console
+  - Takes an input from a user
+  - "It is not a function, it's a data type"
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/47677#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2

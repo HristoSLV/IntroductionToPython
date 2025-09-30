@@ -1,0 +1,20 @@
+type: matching
+captions:
+  - pip install &quot;some_package&gt;=1.0.1&quot;
+  - pip install some_package
+  - pip install some_package==1.0.1
+options:
+  - the specific version
+  - the minimum version
+  - the latest version
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6236#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2

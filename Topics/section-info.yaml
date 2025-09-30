@@ -1,0 +1,62 @@
+content:
+  - "Hello, Python"
+  - Writing first program
+  - Multi-line programs
+  - Basic data types
+  - Variables
+  - Naming variables
+  - Integer arithmetic
+  - Taking user's input
+  - Program with numbers
+  - Invoking functions
+  - Boolean type and operations. True and false
+  - Comparisons
+  - If statement
+  - Else statement
+  - List
+  - Indexes
+  - For loop
+  - Declaring functions
+  - Importing modules
+  - Elif statement
+  - "Function, arguments and parameters"
+  - Quotes and multi-line strings
+  - String formatting
+  - While loop
+  - "Loop control  break, continue, pass"
+  - Dictionary
+  - Dictionary methods
+  - Operations with dictionary
+  - Type casting
+  - Comments
+  - Installing packages with pip
+  - Introduction to Python
+  - Integer arithmetic  special operations
+  - Global vs local. Scopes
+  - Identity testing
+  - Integer arithmetic  basic operations
+  - PEP 8  Coding style guide
+  - Objects in Python
+  - Operations with list
+  - Default arguments
+  - Tuple
+  - Args
+  - Class
+  - Class instances
+  - Methods
+  - Methods and attributes
+  - Magic methods
+  - Inheritance in Python
+  - Working with strings  basic methods
+  - Slicing
+  - Function decorators
+  - Escape sequences
+  - Splitting strings and joining lists
+  - Functional decomposition
+  - Sep and end arguments of print
+  - Set
+  - Conversion to boolean
+  - Abstract classes
+  - Multiple inheritance
+  - Method overriding
+  - Docstrings

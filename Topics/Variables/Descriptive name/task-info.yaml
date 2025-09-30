@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "#number"
+  - text: n_o_p
+  - text: number_of_pages
+  - text: pg
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/47549#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: class_
+  - text: int
+  - text: O
+  - text: error_message
+  - text: correctAnswer
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/5887#comment
+status: Solved
+record: -1
+custom_name: How to name a variable?
+local_check: false

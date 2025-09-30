@@ -1,0 +1,14 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "Yes, but only after the creation of the subclass."
+  - text: "No, the <code>TypeError</code> will be raised."
+  - text: "Yes, and we don't need to create any subclass in advance."
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15557#comment
+status: Solved
+record: -1
+local_check: false

@@ -1,0 +1,81 @@
+<div class="step-text">
+<p>One of the main principles of object-oriented programming is <strong>inheritance. </strong>In this topic, we'll focus on inheritance in Python: what it means and how it's done.</p>
+<h5 id="what-is-inheritance" style="text-align: center;">What is inheritance?</h5>
+<p>Inheritance is a mechanism that allows classes to inherit methods or properties from other classes. Or, in other words, inheritance is a mechanism of deriving new classes from existing ones.</p>
+<p>The purpose of inheritance is to reuse existing code. Often, objects of one class may resemble objects of another class, so instead of rewriting the same methods and attributes, we can make one class inherit those methods and attributes from another class.</p>
+<p>When we talk about inheritance, the terminology resembles biological inheritance: we have <strong><a class="theory-lookup not-relevant" href="/learn/step/7235" target="_blank" title="In Python, a child class, also known as a derived class or subclass, is a class that inherits attributes and methods from a parent class, also known as a base class or superclass. | Child classes can override or extend the functionality of their parent class, and they can also inherit the functionality of multiple parent classes in the case of multiple inheritance. This allows for code reusability and a more organized class hierarchy, following the DRY (Don't Repeat Yourself) principle. In the provided context, the child class is referred to as a class that inherits from other classes, specifically a class that inherits from both 'class' and 'class', making it a case of multiple inheritance.">child classes</a> (</strong>or<strong> subclasses, <a class="theory-lookup not-relevant" href="/learn/step/7235" target="_blank" title="In Python, a derived class (also known as a child class or subclass) is a class that inherits attributes and methods from another class, known as the base class or parent class. | This mechanism of inheritance allows for code reusability and promotes the DRY (Don't Repeat Yourself) principle. In a class hierarchy, the arrow points from the child class to the parent class, and a child class can have multiple parent classes, resulting in multiple inheritance. When passing an object of a derived class as a function argument, type hints can be used to ensure that the correct type of object is being passed.">derived classes</a>) </strong>that inherit methods or variables from <strong><a class="theory-lookup not-relevant" href="/learn/step/7235" target="_blank" title="In Python, a parent class, also known as a base class, is a class that serves as the foundation for other classes, which are referred to as child classes or derived classes. | These child classes inherit methods and attributes from their parent class. In cases of multiple inheritance, a class can have more than one parent class, allowing for complex class hierarchies. It is important to call the parent implementation when overriding methods in order to avoid unexpected consequences and to ensure the original implementation and any enhancements coexist.">parent classes</a> </strong>(or <strong><a class="theory-lookup not-relevant" href="/learn/step/7235" target="_blank" title="In Python, a base class (also known as a parent class or superclass) is a class that serves as the foundation for other classes, known as derived classes or subclasses. | These derived classes inherit attributes and methods from the base class. Base classes can be used to establish a hierarchy of classes, where the base class provides a general definition, and the derived classes provide more specific definitions. A base class can also define abstract methods, which must be implemented by any derived classes. The `abc` module in Python provides tools for creating abstract base classes.">base classes</a>, superclasses). </strong>Child classes can also redefine methods of the parent class if necessary.</p>
+<h5 id="class-object" style="text-align: center;">Class object</h5>
+<p>Inheritance is very easy to implement in your programs. Any class can be a parent class, so all we need to do is to write the name of the parent class in <strong>parentheses </strong>after the child class:</p>
+<pre><code class="language-python"># inheritance syntax
+class ChildClass(ParentClass):
+    # methods and attributes
+    ...</code></pre>
+<p>The definition of the parent class should precede the definition of the child class, otherwise, you'll get a <code class="language-python">NameError</code>! If a class has several subclasses, its definition should precede them all. The "sibling" classes can be defined in any order.</p>
+<p>When we don't define a parent for our class, it doesn't mean that it doesn't have any! By default, all classes have the class <code class="language-python">object</code> as their parent. In Python 3.x we don't need to explicitly indicate that, so the definitions below are equivalent:</p>
+<pre><code class="language-python"># parent class is explicit
+class SomeClass(object):
+    # methods and attributes
+    ...
+
+
+# parent class is implicit
+class SomeClass:
+    # methods and attributes
+    ...</code></pre>
+<p>Subclasses of <code class="language-python">object</code> inherit its methods and attributes. So, all standard methods like <code class="language-python">__init__</code> or <code class="language-python">__repr__</code> are inherited from the class <code class="language-python">object</code>. If we don't redefine those methods for our custom classes, we end up using their implementations defined for the <code class="language-python">object</code> class.</p>
+<h5 id="single-inheritance" style="text-align: center;">Single inheritance</h5>
+<p>Unlike some other programming languages, Python supports two forms of inheritance: <strong>single </strong>and<strong> multiple.</strong> <strong><a class="theory-lookup not-relevant" href="/learn/step/7235" target="_blank" title="In Python, single inheritance refers to a child class acquiring properties and methods from a single parent class. | This means that the child class inherits attributes and behaviors of the parent class, and can also define its own unique attributes and methods. The child class can override or extend methods inherited from the parent class, providing a way to customize and specialize the behavior of the parent class. This concept enables code reuse and a more organized code structure, adhering to the DRY (Don't Repeat Yourself) principle.">Single inheritance</a> </strong>is when a child class inherits from one parent class. <strong>Multiple inheritance </strong>is when a child class inherits from multiple parent classes. In this topic, we'll cover only single inheritance. Don't worry, though, you'll have a chance to learn about multiple inheritance in the next topics!</p>
+<p>Let's consider an example of single inheritance.</p>
+<pre><code class="language-python"># parent class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+# child class
+class Dog(Animal):
+    pass</code></pre>
+<p>Here we have a base class <code class="language-python">Animal</code> with the <code class="language-python">__init__</code> method and a subclass <code class="language-python">Dog</code> that inherits from the base class. The keyword <code class="language-python">pass</code> allows us not to write anything in the definition of the child class.</p>
+<p>Now that we've defined classes, we can create objects:</p>
+<pre><code class="language-python">cow = Animal("Bessie")  # instance of Animal
+corgi = Dog("Baxter")   # instance of Dog</code></pre>
+<p>We haven't defined the <code class="language-python">__init__</code> for the class <code class="language-python">Dog</code> but since it's a child of <code class="language-python">Animal</code>, it inherited its <code class="language-python">__init__</code>. So if we tried to declare an instance of the class <code class="language-python">Dog</code> in a different way, we would get an error:</p>
+<pre><code class="language-python">labrador = Dog()  # TypeError</code></pre>
+<h5 id="type-vs-isinstance" style="text-align: center;">type() vs isinstance()</h5>
+<p>There are two main ways to check the type of an object: <code class="language-python">type()</code> or <code class="language-python">isinstance()</code> functions.</p>
+<p>The <code class="language-python">type()</code> function takes one argument, an object, and returns its type. The <code class="language-python">isinstance()</code> function takes two arguments: an object and a class. It checks if the given object is an instance of the given class and returns a <a class="theory-lookup not-relevant" href="/learn/step/7235" target="_blank" title="In Python, a boolean value is a special data type that can have only two possible values: True or False. | These values are used to represent the two opposite states of something, such as on or off, yes or no. The values of non-boolean types, such as integers or strings, are called truthy or falsy, depending on whether they are interpreted as true or false. In Python, the following values are evaluated as false: constant defined to be false (None), zero of any numeric type (0, 0.0, 0j), empty sequences and containers ([], (), {}, set()), and empty strings ('', b''). Anything else generally evaluates to true.">boolean value</a>.</p>
+<p>For built-in types, they work the same, but when inheritance is involved, their results are different. Let's check it out!</p>
+<p>First, let's look at the <code class="language-python">type()</code> function:</p>
+<pre><code class="language-python">print(type(cow) == Animal)  # True
+print(type(corgi) == Animal)  # False
+
+print(type(cow) == Dog)     # False
+print(type(corgi) == Dog)     # True
+</code></pre>
+<p>As you can see, this allows us to check for the immediate type of the object. Now, <code class="language-python">isinstance()</code> works differently:</p>
+<pre><code class="language-python">print(isinstance(cow, Animal))    # True
+print(isinstance(corgi, Animal))  # True
+
+print(isinstance(cow, Dog))    # False
+print(isinstance(corgi, Dog))  # True</code></pre>
+<p>With this, we get <code class="language-python">True</code> not only with the immediate type but also with the parent type and it would work even with the parent of the parent type! This distinction is important to remember for future projects!</p>
+<h5 id="issubclass" style="text-align: center;">issubclass()</h5>
+<p>While <code class="language-python">isinstance()</code> checks the type of an instance of a class, another built-in function asks whether a given class is a subclass of another class:</p>
+<pre><code class="language-python">print(issubclass(Dog, Animal))  # True
+print(issubclass(Animal, Dog))  # False
+
+print(issubclass(Dog, Dog))     # True
+print(issubclass(corgi, Dog))   # TypeError</code></pre>
+<p>As shown, the <code class="language-python">issubclass()</code> function returns <code class="language-python">True</code> if the first class inherits from the second class, and <code class="language-python">False</code> otherwise. Each class is considered a subclass of itself. Notice that the function can't work with instances of a class, both its arguments should be classes. However, you can use a tuple of classes to check if your class inherits from any of the several classes in the tuple.</p>
+<pre><code class="language-python">print(issubclass(Dog, object))            # True
+print(issubclass(Dog, (Animal, object)))  # True</code></pre>
+<p>The case with several classes might be somewhat misleading, though. The thing is that the function checks whether <em>any</em> element of the tuple is a parent. Say, we have defined a new class <code class="language-python">Robot</code>:</p>
+<pre><code class="language-python">class Robot:
+    pass</code></pre>
+<p>Then <code class="language-python">issubclass()</code> will return the following:</p>
+<pre><code class="language-python">print(issubclass(Dog, Robot))            # False
+print(issubclass(Dog, (Robot, Animal)))  # True</code></pre>
+<p>Even though <code class="language-python">Dog</code> has nothing to do with <code class="language-python">Robot</code>, in the last case, we got <code class="language-python">True</code>. So keep this detail in mind when calling this function!</p>
+<h5 id="conclusion" style="text-align: center;">Conclusion</h5>
+<p>As one of the pillars of OOP, inheritance is very important! In Python, declaring parent classes is quite simple and straightforward. In this topic, we've covered the basics of the inheritance in Python: how it's done, what is class <code class="language-python">object</code>, how to define a single parent for the class, and then check the type of an object or a class without any mistakes.</p>
+<p>Inheritance is what really makes classes so powerful and useful. It also allows programmers to stick to the DRY (Don't Repeat Yourself) principle and pushes them to think about the effectiveness and clarity of their classes.</p>
+</div>

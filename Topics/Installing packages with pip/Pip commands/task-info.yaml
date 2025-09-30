@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: command prompt
+  - text: input line
+  - text: Python interpreter
+  - text: terminal
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7032#comment
+status: Solved
+record: -1
+local_check: false

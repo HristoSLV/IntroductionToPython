@@ -1,0 +1,32 @@
+type: matching
+captions:
+  - '"3" -&gt; 3'
+  - '"3.0" -&gt; 3.0'
+  - 3 -&gt; "3"
+  - 3 -&gt; 3.0
+  - 3.0 -&gt; 3
+  - 3.0 -&gt; "3.0"
+  - '"3.0" -&gt; 3'
+options:
+  - <code>str(3)</code>
+  - <code>int("3")</code>
+  - <code>float("3.0")</code>
+  - <code>float(3)</code>
+  - <code>int(3.0)</code>
+  - <code>str(3.0)</code>
+  - <code>int(float("3.0"))</code>
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/22852#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6

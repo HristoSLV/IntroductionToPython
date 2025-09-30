@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Define ALL methods as abstract.
+  - text: Use the keyword <code>abstract</code> in the class definition.
+  - text: Have at least one abstract method.
+  - text: Inherit from the <code>ABC</code> class.
+  - text: Have no <code>__init__</code> method.
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10112#comment
+status: Solved
+record: -1
+local_check: false

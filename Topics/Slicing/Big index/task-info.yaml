@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "['Shameless', 'Doctor Who', 'Friends']"
+  - text: "['Doctor Who', 'Friends']"
+  - text: "['Doctor Who', 'Friends', '']"
+  - text: There will be an error
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9137#comment
+status: Solved
+record: -1
+local_check: false

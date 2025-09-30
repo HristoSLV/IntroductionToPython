@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: from = "Dhaka"
+  - text: print(return)
+  - text: print("del")
+  - text: del = "delete"
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/47546#comment
+status: Solved
+record: -1
+local_check: false

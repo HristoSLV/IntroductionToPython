@@ -1,0 +1,9 @@
+type: unsupported
+custom_name: Which parenthesis to put?
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/34847#comment
+status: Solved
+record: -1

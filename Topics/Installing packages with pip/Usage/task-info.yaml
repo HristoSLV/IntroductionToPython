@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: to get a package not included in the standard library
+  - text: to find out the version of a package
+  - text: to get a module from the standard library
+  - text: to update or re-install some package
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6232#comment
+status: Solved
+record: -1
+local_check: false

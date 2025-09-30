@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: They must start with a digit
+  - text: They can't contain underscores
+  - text: They cannot include any digits
+  - text: They are case-sensitive
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/47543#comment
+status: Solved
+record: -1
+local_check: false

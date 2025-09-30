@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Just to show off to other coders
+  - text: To make fixing bugs a nightmare
+  - text: To keep the code tidy and easy on the eyes
+  - text: To make the code run super fast
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/47675#comment
+status: Solved
+record: -1
+custom_name: What’s PEP 8 Anyway?
+local_check: false

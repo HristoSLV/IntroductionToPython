@@ -1,0 +1,23 @@
+type: matching
+captions:
+  - 1 and '0'
+  - "[] or 0j"
+  - "[] and '0'"
+  - 1 or 0j
+options:
+  - '''0'''
+  - 0j
+  - 1
+  - "[]"
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10330#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3

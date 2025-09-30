@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: user_home_address
+  - text: the_home_address_of_the_user
+  - text: userHomeAddress
+  - text: _uha
+  - text: userhomeaddress
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6875#comment
+status: Solved
+record: -1
+local_check: false

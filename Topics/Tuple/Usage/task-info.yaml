@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: When we need to get rid of duplicate values in data.
+  - text: When we are going to modify the data we store.
+  - text: When immutability of data is required.
+  - text: When we want to meet time and memory requirements.
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7466#comment
+status: Solved
+record: -1
+local_check: false

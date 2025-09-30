@@ -1,0 +1,13 @@
+type: code
+custom_name: Where are the comments?
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6791#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 16 May 2024 02:53:49 UTC"
+record: -1
+submission_language: python3

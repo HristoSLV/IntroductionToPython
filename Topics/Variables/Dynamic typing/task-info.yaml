@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "When creating a variable, you don't have to specify its type."
+  - text: Each variable has a type that cannot be changed throughout the program.
+  - text: The type of a variable is unknown during execution of the program.
+  - text: It's possible to assign values of different types to the same variable.
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6586#comment
+status: Solved
+record: -1
+local_check: false

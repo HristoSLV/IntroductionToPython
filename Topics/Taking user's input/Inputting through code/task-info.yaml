@@ -1,0 +1,14 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "Hello, <br> Hyperskill"
+  - text: "Hello, user_name"
+  - text: "Hello, Hyperskill"
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/49205#comment
+status: Solved
+record: -1
+local_check: false
