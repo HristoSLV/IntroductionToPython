@@ -6,13 +6,5 @@ files:
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/10109#comment
 status: Solved
-feedback:
-  message: |-
-    <html>[+] Test #1. OK
-    [+] Test #2. OK
-    [+] Test #3. OK
-
-    3 of 3 test(s) passed.</html>
-  time: "Thu, 26 Jun 2025 15:46:17 UTC"
 record: -1
 submission_language: python3

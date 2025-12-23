@@ -1,17 +1,10 @@
 content:
   - Theory
-  - Nested for
-  - Iteration
-  - True or False
-  - Squares
   - Vowel count
-  - Range function
   - Speech generation
   - Assigning specific messages to numbers in a list
   - FizzBuzz
   - Generate a Fibonacci series of given length
-  - Printing      symbols
-  - Double loop
   - The average of all numbers
   - List from input
   - A mean of n

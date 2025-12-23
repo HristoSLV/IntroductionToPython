@@ -1,9 +1,3 @@
 content:
   - Theory
-  - Accessing docstrings
-  - Use cases
-  - Main style conventions
-  - PEP 257 conventions
-  - Object attribute
-  - Class constructor
   - Asking for help

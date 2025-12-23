@@ -5,8 +5,5 @@ files:
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/8438#comment
 status: Solved
-feedback:
-  message: <html>Correct solution</html>
-  time: "Wed, 01 May 2024 11:04:27 UTC"
 record: -1
 submission_language: python3
