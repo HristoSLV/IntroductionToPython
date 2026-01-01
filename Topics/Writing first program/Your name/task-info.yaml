@@ -5,9 +5,5 @@ files:
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/5209#comment
 status: Solved
-feedback:
-  message: "<html>Nice to meet you! \nYou've demonstrated an understanding of how\
-    \ to use the print() without syntactic errors.\n\n</html>"
-  time: "Tue, 30 Apr 2024 23:05:43 UTC"
 record: -1
 submission_language: python3

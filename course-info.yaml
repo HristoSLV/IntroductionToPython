@@ -6,5 +6,6 @@ summary: All problems in Python programming language that can't be opened togeth
 programming_language: Python
 content:
   - Topics
+additional_files: [ ]
 mode: Study
 yaml_version: 5
